@@ -5,5 +5,12 @@
  * @returns {number}
  */
 function pow (m, n) {
-
+    if (n > 1) {
+        return m * pow(m, n-1);
+    } else if (n === 1) {
+        return m;
+    }
 }
+    let m = +prompt ('Введите m ','m');
+    let n = +prompt('Введите n','n');
+    alert (pow(m,n));
