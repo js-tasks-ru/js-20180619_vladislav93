@@ -5,4 +5,15 @@
  * @returns {Object}
  */
 function find (obj, value) {
+    for (value in obj) {
+        console.log(obj[value])
+    }
 }
+
+
+let obj = {
+    options: {
+        color: 'red'
+    }
+};
+find(obj, 'red');
